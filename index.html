@@ -9,7 +9,9 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
     <script src="https://use.fontawesome.com/75f5ac9bf1.js"></script>
+
 </head>
 
 <body>
@@ -18,8 +20,9 @@
 
     <div class="navbar">
 
-
         <img class="logo navitems" src="images/aloha-logo.svg" alt="logo">
+
+        <div class="total"></div><!-- add to cart counter -->
         <img class="cart navitems" src="images/cart-icon.svg" alt="cart" />
 
 
@@ -34,7 +37,7 @@
                 </ul>
             </nav>
         </div>
-
+      </div>
     </div>
 
     <!-- Hero Background Section -->
@@ -59,12 +62,12 @@
 
     <section>
       <div class="category"/>
-        <div class="mens">mens</div>
+        <div class="mens">men's</div>
           <div class="trends">trends</div>
             <div class="glasses">glasses</div>
               <div class="sale">sale</div>
                 <div class="bags">bags</div>
-                  <div class="womens">womens</div>
+                  <div class="womens">women's</div>
       </div>
     </section>
 
@@ -79,25 +82,57 @@
                     <img class="li_img" src="images/stretch-knit-dress.jpg" alt="Image of knit dress" />
                     <p class="itm_category">Dresses</p>
                     <h3 class="itm_name">Stretch Knit Dress</h3>
-                    <p class="itm_price">$169.00 </p>
+                    <p class="itm_price">$169.00</p>
+                <button value="1" class="cart_button">Add To Cart</button>
                 </li>
                 <li>
                     <img class="li_img" src="images/cotton-blue-shirt.jpg" alt="Image of blue shirt" />
                     <p class="itm_category">Shirts</p>
                     <h3 class="itm_name">Cotton Blue Shirt</h3>
                     <p class="itm_price">$89.00</p>
+                <button value="1" class="cart_button">Add To Cart</button>
                 </li>
                 <li>
                     <img class="li_img" src="images/checked-stretch-dress.jpg" alt="Image of checked stretch dress" />
                     <p class="itm_category">Dresses</p>
                     <h3 class="itm_name">Checked Stretch Dress</h3>
                     <p class="itm_price">$129.00</p>
+                <button value="1" class="cart_button">Add To Cart</button>
                 </li>
                 <li>
                     <img class="li_img" src="images/blue-hipster-backpack.jpg" alt="Image of backpack" />
                     <p class="itm_category">Bags</p>
                     <h3 class="itm_name">Blue Hipster Backpack</h3>
                     <p class="itm_price">$69.00</p>
+                <button value="1" class="cart_button">Add To Cart</button>
+                </li>
+                <li>
+                    <img class="li_img" src="images/demin-overall-shorts.jpg" alt="Image of backpack" />
+                    <p class="itm_category">Demin</p>
+                    <h3 class="itm_name">Demin Overall Shorts</h3>
+                    <p class="itm_price">$89.00</p>
+                <button value="1" class="cart_button">Add To Cart</button>
+                </li>
+                <li>
+                    <img class="li_img" src="images/pink-dotted-dress.jpg" alt="Image of backpack" />
+                    <p class="itm_category">Dresses</p>
+                    <h3 class="itm_name">Pink Dotted Dress</h3>
+                    <p class="itm_price">$99.00</p>
+                <button value="1" class="cart_button">Add To Cart</button>
+                </li>
+                <li>
+                    <img class="li_img" src="images/blue-silk-dress.jpg" alt="Image of backpack" />
+                    <p class="itm_category">Dresses</p>
+                    <h3 class="itm_name">Blue Silk Dress</h3>
+                    <p class="itm_price">$119.00</p>
+                <button value="1" class="cart_button">Add To Cart</button>
+                </li>
+                <li>
+                    <img class="li_img" src="images/cotton-yellow-tshirt.jpg" alt="Image of backpack" />
+                    <p class="itm_category">Shirts</p>
+                    <h3 class="itm_name">Cotton Yellow Tshirt</h3>
+                    <p class="itm_price">$39.00</p>
+                <button value="1" class="cart_button">Add To Cart</button>
                 </li>
             </ul>
         </div>
@@ -109,7 +144,8 @@
         <div class="updates_container">
             <h2 class="sign"><em>Sign-up for</em> <strong>Updates</strong></h2>
             <p class="stay"> Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-            <form class="subscribe max_container">
+            <form action="submit.php" method="get" class="subscribe" onSubmit="alert('Thanks for subscribing!')">
+            <!-- <form class="subscribe max_container"> -->
                 <input type="email" class="inputEmail" name="email" placeholder="Your Email">
                 <input type="submit" name="subscribe" value="Subscribe" class="subscribe_button">
             </form>
@@ -141,6 +177,15 @@
             </div>
         </div>
     </footer>
+
+    <!--   loading js files here -->
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="js/main.js"></script>
+
+
+
 </body>
 
 </html>

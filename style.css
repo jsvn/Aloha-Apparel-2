@@ -62,7 +62,6 @@
 
 .container {
     margin: 0 auto;
-
 }
 
 em {
@@ -75,10 +74,6 @@ strong {
 
 html {
     font-size: 14px;
-}
-
-header {
-
 }
 
 body {
@@ -97,30 +92,52 @@ body {
 
 .cart {
     width: 50px;
-  	display: flex;
+    display: flex;
     flex: 0 1 0;
     align-self: flex-end;
     text-align: right;
-  	}
+}
+
+div.total {
+    display: none;
+}
+
+.total {
+    font-family: 'raleway';
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    background: #e2574c;
+    color: white;
+    height: 23px;
+    width: 23px;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .border {
-  	border-top: 1px rgba(0,0,0,0.1) solid;
+    border-top: 1px rgba(0, 0, 0, 0.1) solid;
     margin: 0 auto;
     width: 96%;
 }
-.nav {
-		transition: 2s;
-		background: rgba(255,255,255,1);
-		position: fixed;
-		z-index: 500;
-		width: 100%;
-		left: 0;
-		right: 0;
-  		top: 0;
-  		/*border-bottom: 1px rgba(0,0,0,0.1) solid;*/
-	}
 
-	/*.navFixed {
+.nav {
+    transition: 2s;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    z-index: 500;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    /*border-bottom: 1px rgba(0,0,0,0.1) solid;*/
+}
+
+
+/*.navFixed {
 		transition: 1s;
 		background: rgba(255,255,255,0.8);
 		position: fixed;
@@ -130,61 +147,61 @@ body {
 		right: 0;
   		top: 0;
 	}*/
-	/* .navFixed is for jquery smooth scrolling for*/
 
-	.navbar {
+
+/* .navFixed is for jquery smooth scrolling for*/
+
+.navbar {
     height: 107px;
     padding-bottom: 5px;
     display: flex;
     position: fixed;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #FFFFFF;
-    top:0px;
-    left:0px;
-    right:0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     z-index: 2;
-	}
+}
 
-	.navitems {
-		height: 50px;
-		margin: 10px;
-		transition: .5s;
-	}
+.navitems {
+    height: 50px;
+    margin: 10px;
+    transition: .5s;
+}
 
-	.navlink_pages {
+.navlink_pages {
     align-self: center;
     flex: 1 0 auto;
-		width: 100%;
+    width: 100%;
     text-align: center;
-    border-width: 100%
-		display: flex;
-		justify-content: center;
-		align-items: center;
+    border-width: 100% display: flex;
+    justify-content: center;
+    align-items: center;
     border-width: 100%;
     padding: 15px 0 10px 0;
-	}
+}
 
-	.navlink {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+.navlink {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 80px 60px 0;
+}
 
-	}
-
-	.navlink_pages a{
-		margin: 0px 10px;
-		font-family: 'raleway';
+.navlink_pages a {
+    margin: 0px 10px;
+    font-family: 'raleway';
     font-size: .999rem;
-		color: #e2574c;
-	}
+    color: #e2574c;
+}
 
-	.navlink_pages a:link {
-		text-decoration: none;
-	}
+.navlink_pages a:link {
+    text-decoration: none;
+}
 
 
 /*----------------------------------------------------------------Hero Background Section*/
@@ -225,7 +242,7 @@ clear:both;
 .hero {
     height: 400px;
     width: 100%;
-    margin-top:100px;
+    margin-top: 100px;
     text-align: center;
     /*position: relative;*/
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("images/banner-girl.png")no-repeat center 50px, url("images/flower-bkgd.jpg")repeat-x center;
@@ -242,89 +259,97 @@ clear:both;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+
 /*----------------------------------------------------------------Category Section*/
-.category{
-  font-family: 'raleway web', sans-serif;
-  font-size: 14px;
-  display: box;
-  display: flex;
-  flex-wrap: wrap;
-  box-align: center;
-  align-items: center;
-  box-pack: center;
-  justify-content: center;
-  /*text-align: center;*/
-  text-transform: uppercase;
-  position: relative;
-}
-.mens{
-  background-image: url('images/mens-category.jpg');
-  /*background-repeat: no-repeat, center, center;*/
-  background-size: cover;
-  padding: 25% 0;
-  width: 100%;
-  text-align: center;
-  border-bottom: 4px solid white;
 
+.category {
+    font-family: 'raleway web', sans-serif;
+    font-size: 14px;
+    display: box;
+    display: flex;
+    flex-wrap: wrap;
+    box-align: center;
+    align-items: center;
+    box-pack: center;
+    justify-content: center;
+    /*text-align: center;*/
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: white;
 }
-.trends{
-  background-image: url('images/trends-category.jpg');
-  height: 200px;
-  width: 50%;
-  background-size: cover;
-  background-repeat: no-repeat center, center;
-  padding: 25% 0;
-  box-sizing: border-box;
-  border: 4px solid white;
-  border-left: 0;
-}
-.glasses{
-  background-image: url('images/glasses-category.jpg');
-  height: 200px;
-  width: 50%;
-  background-repeat: no-repeat, center, center;
-  background-size: cover;
-  padding: 25% 0;
-  box-sizing: border-box;
-  border: 4px solid white;
-  border-right: 0;
-}
-.sale{
-  background-image: url('images/sale-category.jpg');
-  height: 200px;
-  width: 50%;
-  background-position: cover;
-  background-repeat: no-repeat, center, center;
-  background-size: cover;
-  padding: 25% 0;
-  box-sizing: border-box;
-  border: 4px solid white;
-  border-left: 0;
-}
-.bags{
-  background-image: url('images/bags-category.jpg');
-  height: 200px;
-  width: 50%;
-  background-position: cover;
-  background-repeat: no-repeat, center, center;
-  background-size: cover;
-  padding: 25% 0;
-  box-sizing: border-box;
-  border: 4px solid white;
-  border-right: 0;
 
+.mens {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/mens-category.jpg') no-repeat center center;
+    background-size: cover, cover;
+    /*height: 200px;*/
+    padding: 25% 0;
+    width: 100%;
+    border-bottom: 4px solid white;
 }
-.womens{
-  background-image: url('images/womens-category.jpg');
-  height: 200px;
-  width: 100%;
-  background-position: cover;
-  background-repeat: no-repeat; center center;
-  background-size: cover;
-  padding: 25% 0;
-  box-sizing: border-box;
-  border-top: 4px solid white;
+
+.trends {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/trends-category.jpg') no-repeat center center;
+    background-size: cover, cover;
+    height: 200px;
+    width: 50%;
+    padding: 25% 0;
+    box-sizing: border-box;
+    border: 4px solid white;
+    border-left: 0;
 }
+
+.glasses {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/glasses-category.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    width: 50%;
+    padding: 25% 0;
+    box-sizing: border-box;
+    border: 4px solid white;
+    border-right: 0;
+}
+
+.sale {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/sale-category.jpg') no-repeat center center;
+    height: 200px;
+    width: 50%;
+    background-position: cover;
+    background-size: cover;
+    padding: 25% 0;
+    box-sizing: border-box;
+    border: 4px solid white;
+    border-left: 0;
+}
+
+.bags {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/bags-category.jpg') no-repeat center center;
+    height: 200px;
+    width: 50%;
+    background-position: cover;
+    background-repeat: no-repeat, center, center;
+    background-size: cover;
+    padding: 25% 0;
+    box-sizing: border-box;
+    border: 4px solid white;
+    border-right: 0;
+}
+
+.womens {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/womens-category.jpg') no-repeat center center;
+    /*background-image: url('images/womens-category.jpg');*/
+    height: 200px;
+    width: 100%;
+    background-position: cover;
+    /*background-repeat: no-repeat; center center;*/
+    background-size: cover;
+    padding: 25% 0;
+    box-sizing: border-box;
+    border-top: 4px solid white;
+}
+
+
 /*} url(../images/banner-girl.png) no-repeat center 60px, url(../images/flower-bkgd.jpg) repeat-x center top;*/
 
 
@@ -379,11 +404,14 @@ clear:both;
     padding: 0px;
 }
 
+.products p {
+    color: grey;
+    padding: 8px 8px;
+}
 
 h2 {
     text-align: center;
     font-size: 2.5rem;
-    font-style: italic;
     font-weight: light;
     font-family: 'playfair_display';
     margin: 50px 0 50px 0;
@@ -413,6 +441,21 @@ h2 {
     font-size: 1.8rem;
     font-family: 'playfair_display';
 }
+
+.cart_button {
+    margin-top: 10px;
+    color: white;
+    background: rgb(50, 50, 50);
+    background-color: #242424;
+    border: 0;
+    /*border: solid 10px rgb(50,50,50);*/
+    border-radius: 100px;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+
+/*------------------------------Sign up Section || */
 
 .updates {
     background-image: url('images/wave-bkgd.jpg');
@@ -534,7 +577,6 @@ footer {
     background: #242424;
     color: white;
     height: 263px;
-
 }
 
 .foot_container {
@@ -623,32 +665,66 @@ footer {
     margin: 0 auto;
 }
 
+
 /*--------------------------------------------------------------------------Breakpoints*/
 
-  @media screen and (min-width: 600px) {
-	.navbar {
-    border-top: 0px;
-  }
-
+@media screen and (min-width: 600px) {
+    .navbar {
+        border-top: 0px;
+    }
     html {
         font-size: 16px;
     }
     .container {
         width: auto;
     }
-
-    .products{
-      display: flex;
-      flex-wrap: wrap;
+    .products {
+        display: flex;
+        flex-wrap: wrap;
     }
     .products li {
         width: 50%;
         display: block;
 
     }
+    .mens {
+      flex-basis: 25%;
+      height: 200px;
+      box-sizing: border-box;
+      border: 4px solid white;
+      border-left: 0;
+      position: relative;
+
+    }
+    .trends{
+      flex-basis: 25%
+      border: 4px solid white;
+
+    }
+
+    .glasses {
+      flex-basis: 25%;
+      border: 4px solid white;
+      border-right: 0;
+
+    }
+    .sale {
+      flex-basis: 25%;
+      border: 4px solid white;
+    }
+    .bags{
+      flex-basis: 25%
+
+    }
+    .womens{
+      flex-basis: 50%;
+
+    }
+
+
     li_img {
-      width: 20rem;
-      width: 0%;
+        width: 20rem;
+        width: 0%;
     }
     .itm_name {
         font-size: 1.5rem;
@@ -680,39 +756,64 @@ footer {
         margin: 0 auto;
     }
     /*--------------------------------------------------------------------------Breakpoints*/
-
-        /*--------max container is used to set width on certain elements----------*/
-        @media all and (min-width: 1240px) {
-            .hero {
-                background-size: auto, auto 530px, auto 450px;
-                background-position: center, center 50px, center;
-            }
-
-            .li_img {
-              display:inline-block;
-              max-width: 300px;
-              width: 100%;
-            }
-
-            /* change sizes and moved the img lower*/
-          /*÷
-		background-size: auto, auto 530px, auto 450px;
-		background-position: center, center 50px, center;
-	} /* change sizes and moved the img lower*/*/
+    /*--------max container is used to set width on certain elements----------*/
+    @media all and (min-width: 1240px) {
+        .border {
+            border-top: 0px;
+        }
+        .hero {
+            background-size: auto, auto 530px, auto 450px;
+            background-position: center, center 50px, center;
+        }
+        .li_img {
+            display: inline-block;
+            max-width: 300px;
+            width: 100%;
+        }
         .container {
             max-width: 1240px;
             width: 100%;
             margin: 0, auto;
         }
-        .products li {
+        /*.category {}*/
+        /*.products li {
             width: 25%;
+            max-width: 310px !important;*/
+
+        /*}
+        .products p {
+          	height: 25vw;*/
         }
         /*changed with so they fit into one line when on 1240px*/
         .itm_name {
             width: 100%;
             margin: 0 auto;
-            */
+
         }
+.updates{
+  background-size: 100% auto;
+}
+        /*
+		.men_item {
+			height: 25vw;
+		}
+
+		.women_item {
+			height: 25vw;
+		}*/
+/*
+		.product li {
+			max-width: 310px !important;
+		}*/
+/*
+		.product_name {
+			width: 100%;
+			margin: 0 auto;
+		} /*changed the width of the product_name to avoid multiple lines in 1240px*//
+
+		/*.signup {
+			background-size: 100% auto;
+		} /*changed bg size so that bg picture stretches to 100%*/*/
         /*changed the width of the itm_name to avoid multiple lines in 1240px*/
         /*.sign  {
 		background-size: 100% auto;
