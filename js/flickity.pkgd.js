@@ -1,4 +1,3 @@
-
 /*!
  * Flickity PACKAGED v2.0.5
  * Touch, responsive, flickable carousels
@@ -4638,5 +4637,3 @@ proto.imagesLoaded = function() {
 return Flickity;
 
 }));
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help

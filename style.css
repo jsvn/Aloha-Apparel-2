@@ -46,14 +46,14 @@
 @font-face {
     font-family: 'raleway';
     src: url('fonts/raleway-medium-webfont.woff2') format('woff2'), url('fonts/raleway-medium-webfont.woff') format('woff');
-    font-weight: medium;
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'raleway';
     src: url('fonts/raleway-mediumitalic-webfont.woff2') format('woff2'), url('fonts/raleway-mediumitalic-webfont.woff') format('woff');
-    font-weight: medium;
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -133,23 +133,9 @@ div.total {
     left: 0;
     right: 0;
     top: 0;
-    /*border-bottom: 1px rgba(0,0,0,0.1) solid;*/
+
 }
 
-
-/*.navFixed {
-		transition: 1s;
-		background: rgba(255,255,255,0.8);
-		position: fixed;
-		z-index: 500;
-		width: 100%;
-		left: 0;
-		right: 0;
-  		top: 0;
-	}*/
-
-
-/* .navFixed is for jquery smooth scrolling for*/
 
 .navbar {
     height: 107px;
@@ -177,10 +163,9 @@ div.total {
     flex: 1 0 auto;
     width: 100%;
     text-align: center;
-    border-width: 100% display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    border-width: 100%;
     padding: 15px 0 10px 0;
 }
 
@@ -190,6 +175,7 @@ div.total {
     justify-content: center;
     align-items: center;
     margin: 0 80px 60px 0;
+    font-weight: bold;
 }
 
 .navlink_pages a {
@@ -209,7 +195,7 @@ div.total {
 .collection {
     font-size: 1.3rem;
     font-family: 'raleway';
-    font-weight: light;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -226,25 +212,11 @@ li {
     text-align: center;
 }
 
-
-/*.hero {
-
-}*/
-
-
-/*.clearfix:before,
-.clearfix:after {
-content:" ";
-display: table;
-clear:both;
-}*/
-
 .hero {
     height: 400px;
     width: 100%;
     margin-top: 100px;
     text-align: center;
-    /*position: relative;*/
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), url("images/banner-girl.png")no-repeat center 50px, url("images/flower-bkgd.jpg")repeat-x center;
     background-size: cover, contain, cover;
 }
@@ -265,14 +237,10 @@ clear:both;
 .category {
     font-family: 'raleway web', sans-serif;
     font-size: 14px;
-    display: box;
     display: flex;
     flex-wrap: wrap;
-    box-align: center;
     align-items: center;
-    box-pack: center;
     justify-content: center;
-    /*text-align: center;*/
     text-transform: uppercase;
     position: relative;
     text-align: center;
@@ -283,7 +251,6 @@ clear:both;
 .mens {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/mens-category.jpg') no-repeat center center;
     background-size: cover, cover;
-    /*height: 200px;*/
     padding: 25% 0;
     width: 100%;
     border-bottom: 4px solid white;
@@ -292,7 +259,6 @@ clear:both;
 .trends {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/trends-category.jpg') no-repeat center center;
     background-size: cover, cover;
-    height: 200px;
     width: 50%;
     padding: 25% 0;
     box-sizing: border-box;
@@ -303,7 +269,6 @@ clear:both;
 .glasses {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/glasses-category.jpg') no-repeat center center;
     background-size: cover;
-    height: 200px;
     width: 50%;
     padding: 25% 0;
     box-sizing: border-box;
@@ -315,7 +280,6 @@ clear:both;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/sale-category.jpg') no-repeat center center;
     height: 200px;
     width: 50%;
-    background-position: cover;
     background-size: cover;
     padding: 25% 0;
     box-sizing: border-box;
@@ -325,11 +289,9 @@ clear:both;
 
 .bags {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/bags-category.jpg') no-repeat center center;
+    background-size: cover;
     height: 200px;
     width: 50%;
-    background-position: cover;
-    background-repeat: no-repeat, center, center;
-    background-size: cover;
     padding: 25% 0;
     box-sizing: border-box;
     border: 4px solid white;
@@ -338,11 +300,8 @@ clear:both;
 
 .womens {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/womens-category.jpg') no-repeat center center;
-    /*background-image: url('images/womens-category.jpg');*/
     height: 200px;
     width: 100%;
-    background-position: cover;
-    /*background-repeat: no-repeat; center center;*/
     background-size: cover;
     padding: 25% 0;
     box-sizing: border-box;
@@ -350,21 +309,16 @@ clear:both;
 }
 
 
-/*} url(../images/banner-girl.png) no-repeat center 60px, url(../images/flower-bkgd.jpg) repeat-x center top;*/
-
-
 /*------------------------------------------Hand-Crafted Section || style = Hand Crafted*/
 
 .hc {
-    /*border: 1px solid #d7d7d7;*/
+
     border-style: none none solid none;
     overflow: hidden;
 }
 
 .hc_style {
-    /*margin: 50px 0 50px 0;*/
     height: 150px;
-    /*border-bottom: 1px solid #d7d7d7;*/
 }
 
 .hc_hand {
@@ -372,16 +326,15 @@ clear:both;
     text-align: center;
     margin-bottom: 5px;
     font-family: 'playfair_display';
-    font-family: light;
+    font-family: normal;
 }
 
 .hc_aloha {
     font-size: 1.18rem;
     text-align: center;
     line-height: 200%;
-    font-weight: light;
+    font-weight: normal;
     font-family: 'playfair_display';
-    font-weight: light;
     margin: 0 auto;
     font-family: 'raleway';
     max-width: 600px;
@@ -399,7 +352,6 @@ clear:both;
 }
 
 .products li {
-    /*margin-50px 0 0 0;*/
     margin: auto;
     padding: 0px;
 }
@@ -412,18 +364,11 @@ clear:both;
 h2 {
     text-align: center;
     font-size: 2.5rem;
-    font-weight: light;
+    font-weight: normal;
     font-family: 'playfair_display';
     margin: 50px 0 50px 0;
     width: 100%;
 }
-
-
-/*img {
-  margin-top: 50px;
-  width: 265px;
-  align-content: center;
-  display: inline-block;*/
 
 .itm_category {
     font-weight: bold;
@@ -448,7 +393,6 @@ h2 {
     background: rgb(50, 50, 50);
     background-color: #242424;
     border: 0;
-    /*border: solid 10px rgb(50,50,50);*/
     border-radius: 100px;
     cursor: pointer;
     line-height: 1.5;
@@ -466,7 +410,6 @@ h2 {
     color: white;
     padding-top: 20px;
     text-align: center;
-    /*min-width: 400px;*/
 }
 
 .updates_container {
@@ -487,7 +430,6 @@ h2 {
     font-size: 1.3rem;
     text-align: center;
     line-height: 100%;
-    padding: 5px 3%;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
 }
 
@@ -547,26 +489,15 @@ h2 {
 
 /*-------------------------------------------------------Footer Section || Social Media*/
 
-.ahola {
-    float: left;
-}
 
 h3 {
     color: #e2574c;
-    font: sans serif
+    font: 'playfair_display';
 }
 
 a:hover {
     color: #e2574c;
 }
-
-
-/*
-.clearfix:after {
-content:" ";
-display: table;
-clear:both;
-}*/
 
 h2 {
     text-align: center;
@@ -580,9 +511,6 @@ footer {
 }
 
 .foot_container {
-    /*margin: 100px auto 50px auto;*/
-    /*font-size: 5rem;*/
-    /*line-height: 200%;*/
     text-align: center;
     margin-top: 60px;
 }
@@ -685,43 +613,45 @@ footer {
     .products li {
         width: 50%;
         display: block;
-
     }
     .mens {
-      flex-basis: 25%;
-      height: 200px;
-      box-sizing: border-box;
-      border: 4px solid white;
-      border-left: 0;
-      position: relative;
-
+        flex: 2 0 50%;
+        padding: 11% 0;
+        border-left: 0px;
+        border: 4px solid white;
+        box-sizing: border-box;
+        border-left: 0;
     }
-    .trends{
-      flex-basis: 25%
-      border: 4px solid white;
-
+    .trends {
+        flex: 1 0 25%;
+        border: 4px solid white;
+        padding: 11% 0;
+        border: 4px solid white;
     }
-
     .glasses {
-      flex-basis: 25%;
-      border: 4px solid white;
-      border-right: 0;
-
+        flex: 1 0 25%;
+        padding: 11% 0;
+        border: 4px solid white;
+        border-right: 0;
     }
     .sale {
-      flex-basis: 25%;
-      border: 4px solid white;
+        flex-basis: 25%;
+        border: 4px solid white;
+        padding: 11% 0;
+        border-left: 0;
     }
-    .bags{
-      flex-basis: 25%
-
+    .bags {
+        flex: 1 0 25%;
+        /*flex-basis: 25%*/
+        border: 4px solid white;
+        padding: 11% 0;
     }
-    .womens{
-      flex-basis: 50%;
-
+    .womens {
+        flex: 2 0 50%;
+        border: 4px solid white;
+        padding: 11% 0;
+        border-right: 0;
     }
-
-
     li_img {
         width: 20rem;
         width: 0%;
@@ -758,66 +688,36 @@ footer {
     /*--------------------------------------------------------------------------Breakpoints*/
     /*--------max container is used to set width on certain elements----------*/
     @media all and (min-width: 1240px) {
+
         .border {
             border-top: 0px;
         }
+
         .hero {
             background-size: auto, auto 530px, auto 450px;
             background-position: center, center 50px, center;
         }
+
         .li_img {
             display: inline-block;
             max-width: 300px;
             width: 100%;
         }
+
         .container {
             max-width: 1240px;
             width: 100%;
             margin: 0, auto;
         }
-        /*.category {}*/
-        /*.products li {
-            width: 25%;
-            max-width: 310px !important;*/
 
-        /*}
-        .products p {
-          	height: 25vw;*/
-        }
-        /*changed with so they fit into one line when on 1240px*/
+      .mens{
+        border-left: 0;
+      }
         .itm_name {
             width: 100%;
             margin: 0 auto;
-
         }
-.updates{
-  background-size: 100% auto;
-}
-        /*
-		.men_item {
-			height: 25vw;
-		}
-
-		.women_item {
-			height: 25vw;
-		}*/
-/*
-		.product li {
-			max-width: 310px !important;
-		}*/
-/*
-		.product_name {
-			width: 100%;
-			margin: 0 auto;
-		} /*changed the width of the product_name to avoid multiple lines in 1240px*//
-
-		/*.signup {
-			background-size: 100% auto;
-		} /*changed bg size so that bg picture stretches to 100%*/*/
-        /*changed the width of the itm_name to avoid multiple lines in 1240px*/
-        /*.sign  {
-		background-size: 100% auto;
-    }*/
-    }
-    /*changed bg size so that bg picture stretches to 100%*/
-}
+        .updates {
+            background-size: 100% auto;
+        }
+      
