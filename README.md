@@ -2,7 +2,7 @@
 # Aloha Part 2
 HTML requirements:
 
-Incorporates a list-based navigation menu
+Incorporated a list-based navigation menu
 CSS requirements:
 
 Be refactored to use a mobile-first responsive layout using flexbox (no floats!)
@@ -16,6 +16,6 @@ JS requirements:
 
 Incorporated Display an alert box that says “Thanks for subscribing!” whenever a user successfully submits the newsletter form with valid email address, otherwise they should see a message in the alert box that asks them to enter a valid email address
 
-Additional requirements:
+
 
 
