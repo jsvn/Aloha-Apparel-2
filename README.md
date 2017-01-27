@@ -1,19 +1,21 @@
 
-# Aloha Project 01
-###Software:
-	- Atom Text (editing)
-	- Chrome (testing)
-	- GIT Bash (repo upload)
+# Aloha Part 2
+HTML requirements:
 
-###Technologies Used
-	- html5 and css3
-	- keeping my codes clean, structured, and easy to read
-	- Used Font Squirrel to Download Font packages
-	- Used GIT Bash to push my local repo to Git Hub
-	- Validated index.html, style.css and reset.css
-	- Learned how to position elements by flex box, width, display, clearfix, etc.
+Incorporates a list-based navigation menu
+CSS requirements:
 
-###Future Goals
-	- Efficiently practice positioning elements within its div or section
-	- Fully understanding what attributes do and what values they need to have for a specific function
-	- Finish coding this page in under 1 day
+Be refactored to use a mobile-first responsive layout using flexbox (no floats!)
+
+RWD requirements
+
+Be responsively designed using a mobile-first approach
+Be optimized for 3 screen sizes: mobile, min-width: 600px and min-width: 1240px
+
+JS requirements:
+
+Incorporated Display an alert box that says “Thanks for subscribing!” whenever a user successfully submits the newsletter form with valid email address, otherwise they should see a message in the alert box that asks them to enter a valid email address
+
+Additional requirements:
+
+
