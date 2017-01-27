@@ -5,7 +5,7 @@ HTML requirements:
 Incorporated a list-based navigation menu
 CSS requirements:
 
-Be refactored to use a mobile-first responsive layout using flexbox (no floats!)
+Refactored to use a mobile-first responsive layout using flexbox (no floats!)
 
 RWD requirements
 
