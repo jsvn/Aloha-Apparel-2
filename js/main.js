@@ -1,36 +1,56 @@
 // Add to Cart
-		var totalItems = 0; //set initial to 0
-		$("button").click(function(){ //when button is clicked, func runs
-			$("div.total").css({"display":"flex"}); // shows the counter at the top
-			totalItems = Number(totalItems) + Number($(this).val()); // .val() brings in the value which is 1 and adds it to the totalItems
-			$(".total").text(totalItems);
-		});
+$(function() {
 
-//     $(function() {
-//         $('.products').flickity({
-//             cellAlign: 'center',
-//             contain: true,
-//             percentPosition: true,
-//             imagesLoaded: true,
-//             autoPlay: true,
-//             prevNextButtons: false
-//         });
-// })
+// Every time I click add button then you add 1 to the cart.
+var cartTotal = 0;
+$('.cart_button').click(function(e){
+	e.preventDefault();
+	cartTotal = cartTotal + 1;
+	console.log(cartTotal);
+	$('.total').text(cartTotal);
+	$('.total').show();
+
+})
 
 
-Slider
-$(function(){
+//flicity slider
+	$('.products').flickity({
+	    cellAlign: 'center',
+	    contain: true,
+	    percentPosition: true,
+	    imagesLoaded: true,
+	    autoPlay: true,
+	    prevNextButtons: false
+	});
 
-    $(".products").flickity({
-           cellAlign: 'right',
-        contain: true,
-    });
-});
+//smooth scrolling
+function pageJump(id) {
+	   $('html,body').animate({
+			     scrollTop: $(id).offset().top - 150
+
+		 }, 'slow');
+};
+ $('.navlink_names').on('click', function(e) {
+	      e.preventDefault();
+				var hashHref = $(this).attr('href');
+
+				pageJump(hashHref);
+ });
+
+
 
 // Email validator
 
-$('.sign-up-email').submit( function(){
-    return false;
+$('.subscribe').submit( function(e) {
+	// if empty(.inputEmail)
+	e.preventDefault();
+ 	if($('.inputEmail').val() == ''){
+		 alert('Please enter a valid email');
+	}
+
+  else{alert( 'Thanks for submitting ')}
+
+
 })
 
 })

@@ -9,9 +9,10 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="flickity.min.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/75f5ac9bf1.js"></script>
-
+    <script src="tota11y.min.js"></script>
 </head>
 
 <body>
@@ -20,8 +21,7 @@
 
     <div class="navbar">
 
-        <img class="logo navitems" src="images/aloha-logo.svg" alt="logo">
-
+        <img class="logo navitems" src="images/aloha-logo.svg" alt="logo"/>
         <div class="total"></div><!-- add to cart counter -->
         <img class="cart navitems" src="images/cart-icon.svg" alt="cart" />
 
@@ -30,10 +30,10 @@
 
             <nav class="navlink">
                 <ul class="navlink_pages">
-                    <li><a class="navlink_names" href="#about">ABOUT</a></li>
-                    <li><a class="navlink_names" href="#shop">SHOP</a></li>
-                    <li><a class="navlink_names" href="#featured">FEATURED</a></li>
-                    <li><a class="navlink_names" href="#updates">UPDATES</a></li>
+                    <li><a class="navlink_names" href="#about">about</a></li>
+                    <li><a class="navlink_names" href="#shop">shop</a></li>
+                    <li><a class="navlink_names" href="#featured">featured</a></li>
+                    <li><a class="navlink_names" href="#updates">updates</a></li>
                 </ul>
             </nav>
         </div>
@@ -51,7 +51,7 @@
 
     <!--Hand-Crafted Section || hc style = Hand Crafted section -->
 
-    <div class="hc_style">
+    <div id="about" class="hc_style">
         <div class="hc_container">
             <h2 class="hc_hand"><em>Hand-Crafted</em> <strong> Styles</strong> </h2>
             <p class="hc_aloha">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
@@ -60,7 +60,7 @@
 
     <!-- Catergory Section -->
 
-    <section>
+    <section id="shop">
       <div class="category"/>
         <div class="mens">men's</div>
           <div class="trends">trends</div>
@@ -74,7 +74,7 @@
     <!-- Most-Loved Products Section || mlp = Most Loved Products -->
 
     <section>
-        <div>
+        <div id="featured">
             <h2 class="mlp"><em>Most-Loved</em> <strong>Products</strong></h2>
 
             <ul class="products">
@@ -140,11 +140,11 @@
 
     <!-- Sign Up Section || updates = Sign Up For Updates -->
 
-    <section class="updates">
+    <section id="updates" class="updates">
         <div class="updates_container">
             <h2 class="sign"><em>Sign-up for</em> <strong>Updates</strong></h2>
             <p class="stay"> Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-            <form action="submit.php" method="get" class="subscribe" onSubmit="alert('Thanks for subscribing!')">
+            <form class="subscribe">
             <!-- <form class="subscribe max_container"> -->
                 <input type="email" class="inputEmail" name="email" placeholder="Your Email">
                 <input type="submit" name="subscribe" value="Subscribe" class="subscribe_button">
@@ -181,8 +181,10 @@
     <!--   loading js files here -->
 
     <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
     <script src="js/flickity.pkgd.js"></script>
+    <script src="js/main.js"></script>
+
 
 
 
