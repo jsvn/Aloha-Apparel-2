@@ -26,7 +26,6 @@
     font-style: normal;
 }
 
-
 /*raleway*/
 
 @font-face {
@@ -59,7 +58,31 @@
 
 
 /*-----------------------------------------------------------------Global Styles*/
+.screen-reader-text:focus {
+   clip: auto !important;
+   display: block;
+   height: 50px;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000; /* above all content */
 
+}
+
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+   background-color: lightgrey;
+   color: #e2574c;
+   text-decoration: none;
+}
+
+#main[tabindex="-1"]:focus {
+   outline: 0;
+}
 .container {
     margin: 0 auto;
 }
@@ -116,6 +139,8 @@ div.total {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align-last: center;
+    padding-top: 3px;
 }
 
 .border {
@@ -133,9 +158,7 @@ div.total {
     left: 0;
     right: 0;
     top: 0;
-
 }
-
 
 .navbar {
     height: 107px;
@@ -152,6 +175,11 @@ div.total {
     z-index: 2;
 }
 
+.navlink_names{
+  text-transform: uppercase;
+}
+
+
 .navitems {
     height: 50px;
     margin: 10px;
@@ -163,7 +191,7 @@ div.total {
     flex: 1 0 auto;
     width: 100%;
     text-align: center;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px 0 10px 0;
@@ -208,7 +236,7 @@ div.total {
 
 li {
     display: inline-block;
-    margin: 0 auto 0 auto;
+    /*margin: 0 auto 0 auto;*/
     text-align: center;
 }
 
@@ -312,7 +340,6 @@ li {
 /*------------------------------------------Hand-Crafted Section || style = Hand Crafted*/
 
 .hc {
-
     border-style: none none solid none;
     overflow: hidden;
 }
@@ -330,7 +357,7 @@ li {
 }
 
 .hc_aloha {
-    font-size: 1.18rem;
+    font-size: 1.14rem;
     text-align: center;
     line-height: 200%;
     font-weight: normal;
@@ -349,6 +376,7 @@ li {
     font-family: 'playfair_display', sans-serif;
     position: relative;
     align-content: center;
+    margin-bottom: 50px;
 }
 
 .products li {
@@ -489,7 +517,6 @@ h2 {
 
 /*-------------------------------------------------------Footer Section || Social Media*/
 
-
 h3 {
     color: #e2574c;
     font: 'playfair_display';
@@ -524,7 +551,6 @@ footer {
     color: white;
 }
 
-.contact_us {}
 
 footer {
     overflow: hidden;
@@ -600,16 +626,17 @@ footer {
     .navbar {
         border-top: 0px;
     }
+    .header{
+        border-top: 0px;
+    }
+
     html {
         font-size: 16px;
     }
     .container {
         width: auto;
     }
-    .products {
-        display: flex;
-        flex-wrap: wrap;
-    }
+
     .products li {
         width: 50%;
         display: block;
@@ -652,10 +679,7 @@ footer {
         padding: 11% 0;
         border-right: 0;
     }
-    li_img {
-        width: 20rem;
-        width: 0%;
-    }
+
     .itm_name {
         font-size: 1.5rem;
     }
@@ -685,34 +709,41 @@ footer {
         max-width: 700px;
         margin: 0 auto;
     }
+  }
     /*--------------------------------------------------------------------------Breakpoints*/
     /*--------max container is used to set width on certain elements----------*/
     @media all and (min-width: 1240px) {
-
         .border {
             border-top: 0px;
         }
+        .navlink_pages {
 
+            padding: 0;
+            flex: 1 0 auto;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+      }
         .hero {
             background-size: auto, auto 530px, auto 450px;
             background-position: center, center 50px, center;
         }
-
+        .products li{
+          width: 25%;
+        }
         .li_img {
-            display: inline-block;
-            max-width: 300px;
             width: 100%;
         }
-
         .container {
             max-width: 1240px;
             width: 100%;
-            margin: 0, auto;
+            margin: 0 auto;
         }
-
-      .mens{
-        border-left: 0;
-      }
+        .mens {
+            border-left: 0;
+        }
         .itm_name {
             width: 100%;
             margin: 0 auto;
@@ -720,3 +751,4 @@ footer {
         .updates {
             background-size: 100% auto;
         }
+}
