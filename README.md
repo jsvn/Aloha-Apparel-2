@@ -3,7 +3,7 @@
 
 ![AlohaPt2-browser-mockup](/images/screenshot.png)
 
-Project Description:
+# Project Description:
 
 *responsively designed using a mobile-first approach
 
