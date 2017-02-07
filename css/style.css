@@ -208,7 +208,7 @@ div.total {
 
 .navlink_pages a {
     margin: 0px 10px;
-    font-family: 'raleway';
+    font-family: 'raleway',sans-serif;
     font-size: .999rem;
     color: #e2574c;
 }
@@ -222,7 +222,7 @@ div.total {
 
 .collection {
     font-size: 1.3rem;
-    font-family: 'raleway';
+    font-family: 'raleway',sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -230,7 +230,7 @@ div.total {
 .spring {
     margin-top: 1rem;
     font-size: 2.5rem;
-    font-family: 'playfair_display';
+    font-family: 'playfair_display',serif;
     color: white
 }
 
@@ -352,7 +352,7 @@ li {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 5px;
-    font-family: 'playfair_display';
+    font-family: 'playfair_display',serif;
     font-family: normal;
 }
 
@@ -361,7 +361,7 @@ li {
     text-align: center;
     line-height: 200%;
     font-weight: normal;
-    font-family: 'playfair_display';
+    font-family: 'playfair_display',serif;
     margin: 0 auto;
     font-family: 'raleway';
     max-width: 600px;
@@ -373,7 +373,7 @@ li {
 
 .products {
     text-align: center;
-    font-family: 'playfair_display', sans-serif;
+    font-family: 'playfair_display', serif;
     position: relative;
     align-content: center;
     margin-bottom: 50px;
@@ -449,7 +449,7 @@ h2 {
 .sign {
     text-align: center;
     font-size: 3rem;
-    font-family: 'playfair_display';
+    font-family: 'playfair_display',serif;
     text-shadow: 4px 4px 15px rgba(0, 0, 0, .5);
 }
 
@@ -479,7 +479,7 @@ h2 {
     border-style: none;
     border-color: white;
     border-radius: 30px;
-    font-family: 'raleway';
+    font-family: 'raleway',sans-serif;
     font-size: 1rem;
     text-indent: 5%;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
@@ -504,7 +504,7 @@ h2 {
     border-radius: 30px;
     position: relative;
     right: 20%;
-    font-family: 'raleway';
+    font-family: 'raleway', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -521,7 +521,7 @@ h2 {
 
 h3 {
     color: #e2574c;
-    font: 'playfair_display';
+    font: 'playfair_display', serif;
 }
 
 a:hover {
@@ -546,7 +546,7 @@ footer {
 
 .foot_container p {
     text-align: center;
-    font-family: 'playfair_display', sans-serif;
+    font-family: 'playfair_display', serif;
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
@@ -609,7 +609,7 @@ footer {
 
 .sm_text {
     display: none;
-    font-family: 'raleway';
+    font-family: 'raleway', sans-serif;
     color: white;
 }
 
@@ -688,7 +688,7 @@ footer {
     }
     .contact_us {
         text-align: center;
-        float: left;
+        float:left;
         margin: 0 auto 0 2rem;
     }
     .social_media {
