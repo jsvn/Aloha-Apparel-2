@@ -15,7 +15,7 @@ $('.cart_button').click(function(e){
 
 //flicity slider
 	$('.products').flickity({
-	    cellAlign: 'center',
+	    cellAlign: 'left',
 	    contain: true,
 	    percentPosition: true,
 	    imagesLoaded: true,
