@@ -37,19 +37,16 @@ function pageJump(id) {
 				pageJump(hashHref);
  });
 
-
-
 // Email validator
 
 $('.subscribe').submit( function(e) {
-	// if empty(.inputEmail)
 	e.preventDefault();
  	if($('.inputEmail').val() == ''){
 		 alert('Please enter a valid email');
 	}
 
   else{alert( 'Thanks for submitting ')}
-
+	// if empty(.inputEmail)
 
 })
 
